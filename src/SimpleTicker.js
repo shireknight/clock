@@ -5,11 +5,11 @@ import ClockFace from './ClockFace'
 import './Ticker.css'
 
 const SimpleTicker = () => {
-    const [isTick, setIsTick] = useState(false)
+    const [isTick, setTick] = useState(false)
     const time = useClock('HH:mm:ss')
 
     useEffect(() => {
-        setIsTick((t) => !t)
+        setTick((t) => !t)
     }, [time])
 
     return (
